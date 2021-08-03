@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Assignment</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <form class="paymentForm" id="submit">
+            <h1 title="course">Course name</h1>
+            <div class="inputContainer">
+                <input type="radio" name="currency" value="euro" id="euro" checked><label for="euro">Euro</label>
+                <input type="radio" name="currency" value="usd" id="usd"><label for="usd">USD</label>
+                <input type="radio" name="currency" value="gbp" id="gbp"><label for="gbp">GBP</label>
+                <br />
+                <div class="paymentPlan">
+                    <div class="payFull">
+                        <input type="checkbox" name="paymentMethod" value="full" id="full"><label for="full">Pay in full</label>
+                        <div class="payFull-convert" id="payFull-convert">
+                        </div>
+                    </div>
+                    <div class="payInstallments">
+                        <input type="checkbox" name="paymentMethod" value="installments" id="installments"><label for="installments">Pay in installments</label>
+                        <div class="payInstallments-convert" id="payInstallments-convert">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn" id="btn-proceed">Proceed</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

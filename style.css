@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    color: #3a3a3a;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+body,
+.paymentForm,
+.userDetails,
+.inputContainer,
+.paymentPlan,
+.emi,
+.fullPrice{
+    padding: 2rem;
+}
+h1,
+.payFull,
+.payInstallments,
+.emi,
+.userDetails .form-group,
+.userDetails input,
+#error{
+    padding: 1rem;
+}
+.paymentForm,
+.userDetails{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid #e7e7e7;
+    border-radius: .5rem;
+}
+.paymentForm label{
+    margin: 0 .5rem;
+}
+.paymentForm input[type="radio"],
+.btn, 
+input[type="checkbox"]{
+    cursor: pointer;
+}
+.paymentPlan{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.payFull,
+.payInstallments{
+    width: 50%;
+}
+.payInstallments{
+    border-left: 1px solid #e7e7e7;
+}
+.fullPrice{
+    position: relative;
+}
+.offerPrice{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    font-weight: 700;
+    color: #1d1d68;
+}
+.fullPrice{
+    width: 50%;
+}
+.emi{
+    width: 70%;
+}
+.fullPrice,
+.emi{
+    border: 1px solid #e7e7e7;
+    margin: 1rem auto;
+}
+.btn{
+    border: none;
+    padding: 1rem 2rem;
+    background: rgba(29, 29, 104, .9);
+    border-radius: .5rem;
+    border: 1px solid #1d1d68;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all .2s ease-in-out;
+}
+.btn:active{
+    transform: translateY(3px);
+}
+.form-group,
+#btn-details{
+    margin: 1rem auto;
+}
+.form-group{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.userDetails input{
+    height: 3rem;
+    width: 60%;
+}
+.form-group label{
+    font-weight: 700;
+}
+.userDetails input:focus-visible{
+    outline: 1px solid #1d1d68;
+}
+#error{
+    font-size: 1.4rem;
+    color: rgb(228, 36, 36);
+}
